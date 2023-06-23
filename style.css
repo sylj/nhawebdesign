@@ -605,6 +605,7 @@ main header {
 }
 
 .information .opening-info {
+    height: 100%;
     position: relative;
     display: flex;
     z-index: 100;
@@ -613,7 +614,9 @@ main header {
 .information .opening-info > article {
     text-align: center;
     width: 50%;
+    height: 100%;
     margin: auto;
+    position: relative;
 }
 
 .information .opening-info .regular-time {
@@ -633,6 +636,7 @@ main header {
     min-width: 355px;
     max-width: 70%;
     margin: auto;
+    position: absolute;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 4fr 10px 7fr;
@@ -796,7 +800,7 @@ main header {
     right: 0;
 }
 
-.location .adress-info {
+.location .address-info {
     min-width: 30%;
     margin: 0 auto;
     position: relative;
@@ -804,10 +808,10 @@ main header {
     z-index: 1;
 }
 
-.location .adress-info > p {
+.location .address-info .address-container {
     background-color: #115b32;
     margin: 0;
-    padding: 40px;
+    padding: 10px 40px;
     border: 4pt solid #101f0e;
     border-radius: 40pt;
     border-bottom-width: 2pt;
@@ -815,7 +819,15 @@ main header {
     border-bottom-right-radius: 0;
 }
 
-.location .adress-info .extra-info {
+.location .address-info .address-container > h4 {
+    margin: 15px 0;
+}
+
+.location .address-info .address-container > p {
+    margin: 0;
+}
+
+.location .address-info .extra-info {
     background-color: #a1ca9c;
     padding: 20px;
     border: 4pt solid #101f0e;
@@ -825,7 +837,7 @@ main header {
     display: flex;
 }
 
-.location .adress-info .extra-info > span {
+.location .address-info .extra-info > span {
     color: #115b32;
     font-weight: bold;
     margin: auto;
