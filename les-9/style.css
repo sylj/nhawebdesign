@@ -144,6 +144,24 @@ footer > span {
   margin: auto;
 }
 
+.button-projectlink {
+    text-decoration: none;
+    margin: auto;
+    margin-right: 80px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.button {
+    background-color: #115b32;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 42pt;
+    font-family: 'Skranji', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 .officialredirect {
   background-color: #357934;
   font-family: 'Skranji', sans-serif;
