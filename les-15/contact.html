@@ -1,15 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="nl-NL">
-    <head></head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Kom alles te weten over mij en mijn CV">
+        <meta name="author" content="SylJ">
+        <title>Contact | De Persoonlijke Pagina van SylJ</title>
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <div class="logo-wrapper">
+                    <a href="../les-15/"><img class="logo" src="media/images/logo.svg"></a>
+                </div>
+                <ul>
+                    <li><a href="../les-15/">Home</a></li>
+                    <li><a href="mijncv.html">Mijn CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section>
+            <section id="title-header">
+                <header class="heading-lead">
+                    <h1>Contact</h1>
+                </header>
+                <p class="intro-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Duis dignissim magna vestibulum aliquet iaculis. Proin viverra id enim vel ultrices. Donec congue mauris nec diam dapibus finibus. Aenean interdum consequat dui vel ultrices.
+                </p>
+            </section>
+            <section class="contactform">
                 <form>
-                    <input class=form-fname type="text" placeholder="Voornaam">
-                    <input class=form-lname type="text" placeholder="Achternaam">
-                    <input class="form-email" type="email" placeholder="Email-adres">
-                    <textarea class="form-message" placeholder="Bericht"></textarea>
+                    <label for="form-fname">Voornaam</label>
+                    <input class=form-fname type="text">
+                    <label for="form-lname">Achternaam</label>
+                    <input class=form-lname type="text">
+                    <label for="form-email">Email adres</label>
+                    <input class="form-email" type="email">
+                    <label for="form-message">Bericht</label>
+                    <textarea class="form-message" placeholder="Laat je reactie hier achter..."></textarea>
                     <select>
                         <option></option>
                     </select>
@@ -17,6 +52,8 @@
                 </form>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer-normal">
+            <span class="copyright">© 2023 SylJ</span>
+        </footer>
     </body>
 </html>

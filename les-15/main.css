@@ -14,9 +14,142 @@ body {
     background-color: #fff6e8;
 }
 
-header {
+body > header {
     background-color: #578270;
     font-family: 'Koulen', Helvetica, sans-serif;
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    display: flex;
+}
+
+.logo-wrapper {
+    height: 120px;
+    margin: auto;
+    margin-top: 0;
+    display: inline-flex;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    margin: auto;
+    display: inline-flex;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav li a {
+    color: #fff6e8;
+    font-size: 1.6rem;
+    padding: 50px 20px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #FFD7A8;
+    width: 100%;
+    height: 90px;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+#title-header {
+    display: flex;
+}
+
+.heading-lead {
+    font-family: "Rozha One", serif;
+    margin: 60px auto;
+}
+
+#introduction .heading-lead {
+    margin-right: 10%;
+}
+
+.heading-lead > h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: -5px;
+    line-height: 0.8em;
+}
+
+.heading-lead > h1:nth-child(2) {
+    margin-left: 110px;
+}
+
+.heading-lead > h1:nth-child(2)::after {
+    content: "Graphic Design";
+    font-family: "Kelly Slab", cursive;
+    font-size: 2rem;
+    letter-spacing: normal;
+    margin-left: 21px;
+}
+
+#title-header .heading-lead {
+    margin-right: 5em;
+}
+
+.intro-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: auto;
+}
+
+#title-header .intro-text {
+    margin-left: 0;
+}
+
+.contactform {
+    display: flex;
+}
+
+.contactform form {
+    font-family: "Kelly Slab", sans-serif;
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+    border: 2pt solid #000;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.contactform form:focus-within {
+    background-color: #FFD7A8;
+    border-color: #578270;
+}
+
+input, textarea {
+    background-color: #fff6e8;
+    margin: 5px 0;
+    padding: 6px 6px;
+    border: 3pt solid #578270;
+}
+
+span {
+    font-family: "Kelly Slab", cursive;
+}
+
+.footer-normal {
+    position: relative;
+}
+
+.copyright {
+    margin: auto;
 }
