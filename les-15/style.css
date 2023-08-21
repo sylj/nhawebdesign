@@ -1,0 +1,365 @@
+/**---- GENERAL STYLING ----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff6e8;
+}
+
+body > header {
+    background-color: #0f4b4d;
+    font-family: 'Koulen', Arial, sans-serif;
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 9999;
+}
+
+main {
+    min-height: calc(100vh - 236px);
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-family: 'Koulen', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.logo-wrapper {
+    height: 120px;
+    margin: auto;
+    margin-top: 0;
+    display: inline-flex;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    margin: auto;
+    display: inline-flex;
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+}
+
+nav li {
+    position: relative;
+    display: inline-flex;
+}
+
+nav li:hover a{
+    color: #ffd7a8;
+}
+
+nav li:hover ~ .page-marker circle {
+    stroke: #ffd7a8;
+}
+
+nav li a {
+    color: #fff6e8;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 50px 20px;
+}
+
+.page-marker, .current-marker {
+    margin: auto;
+    position: absolute;
+    right: 100%;
+    bottom: 24px;
+    transition: 0.5s ease;
+    pointer-events: none;
+}
+
+nav li:nth-of-type(1).current ~ .current-marker, nav li:nth-of-type(1).current ~ .page-marker {
+    left: 11%;
+}
+
+nav li:nth-of-type(2).current ~ .current-marker, nav li:nth-of-type(2).current ~ .page-marker {
+    left: 42%;
+}
+
+nav li:nth-of-type(3).current ~ .current-marker, nav li:nth-of-type(3).current ~ .page-marker {
+    left: 78%;
+}
+
+nav li:nth-of-type(1):hover ~ .page-marker {
+    left: 11%;
+}
+
+nav li:nth-of-type(2):hover ~ .page-marker {
+    left: 42%;
+}
+
+nav li:nth-of-type(3):hover ~ .page-marker {
+    left: 78%;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+}
+
+
+/**---- STYLED CLASSES ----*/
+
+.bg-portrait {
+    background: #fff6e8 url(media/images/stylized_portrait.png) no-repeat 5% bottom;
+    background-size: clamp(100px, 45%, 1200px) auto;
+}
+
+#introduction {
+    margin: auto 50px;
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#title-header {
+    margin: auto 50px;
+    padding: 60px 0;
+    display: flex;
+}
+
+.block-content {
+    margin: 60px auto;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-lead {
+    margin: 60px auto;
+}
+
+#introduction .heading-lead {
+    margin-right: 20%;
+}
+
+.heading-lead > h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 0.8em;
+    letter-spacing: -8px;
+    text-shadow: 0 0 60px rgba(255, 246, 232, 0.5);
+}
+
+#introduction .heading-lead > h1:nth-child(2) {
+    margin-left: 120px;
+    display: inline;
+}
+
+#introduction .heading-lead::after {
+    content: "Graphic Design";
+    background-color: #000;
+    color: #fff;
+    font-family: 'Koulen', Arial, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: normal;
+    margin-left: 21px;
+    padding: 0 5px;
+}
+
+#title-header .heading-lead {
+    margin-right: 5em;
+}
+
+.intro-text {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.5pt;
+    width: 40%;
+    margin: auto;
+    margin-right: 15%;
+}
+
+#title-header .intro-text {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.intro-text h4 {
+    color: #1c7a7d;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.2pt;
+    padding: 10px;
+}
+
+.full-text{
+    margin: 40px auto;
+    padding-left: 100px;
+}
+
+.intro-text span {
+    padding-left: 20px;
+}
+
+
+/** -- EDUCATION & EXPERIENCE TABLE | MIJNCV -- */
+#education-experience {
+    margin: auto;
+    padding: 20px 20px;
+    border-collapse: collapse;
+}
+
+#education-experience tr:nth-child(odd) {
+    background-color: #cddfe1;
+    color: #0f4b4d;
+}
+
+#education-experience tr:nth-child(even) {
+    background-color: #2d787b;
+    color: #fff;
+}
+
+#education-experience thead th{
+    color: #fff;
+    font-family: 'Koulen', Arial, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#education-experience thead th:nth-of-type(1) {
+    background-color: #0f4b4d;
+}
+
+#education-experience thead th:nth-of-type(2) {
+    background-color: #d7d7d7;
+    color: #4d4d4d;
+}
+
+.education {
+    border: 4pt solid #0f4b4d;
+}
+
+.experience {
+    border: 4pt solid #d7d7d7;
+}
+
+td, th {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+
+/** -- CONTACT FORM | CONTACT -- */
+.block-content h3 {
+    color: #1c7a7d;
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+#contactform {
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+    border: 2pt solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactform:focus-within {
+    background-color: #cddfe1;
+    color: #fff;
+    border-color: #0f4b4d;
+    box-shadow: inset 0 0 0px 18px #fff6e8, inset 0 0 0 20px #0f4b4d;
+}
+
+.form-input-row {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-message-row {
+    align-items: flex-start;
+}
+
+
+#contactform:focus-within label {
+    background-color: #1c7a7d;
+    color: #fff;
+    font-weight: 500;
+    border-color: #cddfe1;
+}
+
+form label {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.5pt;
+    width: 120px;
+    margin-right: 40px;
+    padding: 10px 10px;
+    border: 2pt solid #0f4b4d;
+}
+
+input[type="text"], input[type="email"], textarea, button {
+    background-color: #fff6e8;
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    font-size: 14px;
+    width: 300px;
+    padding: 6px 6px;
+    border: 3pt solid #0f4b4d;
+    grid-column: 2;
+}
+
+button {
+    color: #0f4b4d;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5pt;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 24px;
+    transition: border 0.2s ease;
+}
+
+button:active {
+    background-color: #0f4b4d;
+    color: #fff6e8;
+    border: 6pt solid #fff6e8;
+}
+
+/** -- FOOTER CONTENT -- */
+.copyright {
+    background-color: #0f4b4d;
+    color: #fff;
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.5pt;
+    margin: auto;
+    padding: 20px 2%;
+    border-radius: 40pt;
+    box-shadow: 0 0 40pt rgba(255, 246, 232, 0.15);
+}

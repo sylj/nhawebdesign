@@ -4,45 +4,56 @@
         <meta charset="utf-8">
         <meta name="description" content="Kom alles te weten over mij en mijn CV">
         <meta name="author" content="SylJ">
-        <title>De Persoonlijke Pagina van SylJ</title>
-        <link href="main.css" rel="stylesheet">
+        <title>SylJ - NHAWebdesign | Kom meer te weten over SylJ</title>
+        <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,800;9..40,1000&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&display=swap" rel="stylesheet"> 
     </head>
-    <body>
+    <body class="bg-portrait">
         <header>
             <nav>
                 <div class="logo-wrapper">
                     <a href="../les-15/"><img class="logo" src="media/images/logo.svg"></a>
                 </div>
                 <ul>
-                    <li><a href="../les-15/">Home</a>
-                        <!-- <svg class="current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="7.5" stroke="#FFF6E8" stroke-width="5"></circle>
-                        </svg> -->
-                    </li>
-                    <li><a href="mijncv.html">Mijn CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="current"><a href="../les-15/">Home</a>
+                    </li><li><a href="mijncv.html">Mijn CV</a>
+                    </li><li><a href="contact.html">Contact</a></li>
+                    <svg class="page-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="7.5" stroke="#FFF6E8" stroke-width="5"></circle>
+                    </svg>
+                    <svg class="current-marker" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="7.5" stroke="#FFF6E8" stroke-width="5"></circle>
+                    </svg>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="hero-page">
             <section id="introduction">
                 <header class="heading-lead">
                     <h1>Sylvian</h1>
                     <h1>Jonckbloedt</h1>
-                    <!-- <span>Graphic Design</span> -->
                 </header>
-                <p class="intro-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                    Duis dignissim magna vestibulum aliquet iaculis. Proin viverra id enim vel ultrices. Donec congue mauris nec diam dapibus finibus. Aenean interdum consequat dui vel ultrices.
-                </p>
+                <article class="intro-text">
+                    <h4>
+                        Van strakke visuele uitingen tot aantrekkelijk webdesign;<br>
+                        Ik help graag bij het neerzetten van een ultieme visuele beleving.
+                    </h4>
+                    <p class="full-text">
+                        Meer dan vijf jaar ervaring met het ontwerpen van aantrekkelijke grafische vormgeving.<br>
+                        Ik heb een passie voor vormgeving en design waarbij de beleving moet aansluiten op de verwachting.<br>
+                        Naast het werken met verschillende grafische uitingen vind ik het ook leuk om even muzikaal bezig te zijn.
+                        <br>
+                        <br>
+                        Nieuwsgierig naar meer? Neem een kijkje in <a href="mijncv.html">mijn CV</a> of <a href="contact.html">neem gelijk contact op.</a>
+                    </p>
+                </article>
             </section>
         </main>
         <footer>
-            <span class="copyright">© 2023 SylJ</span>
+            <span class="copyright">© 2023 SylJ NHAWebdesign Copyright</span>
         </footer>
     </body>
 </html>
