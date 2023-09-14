@@ -72,6 +72,7 @@ footer > span {
     color: transparent;
     background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
     background-clip: text;
+    -webkit-background-clip: text;
     display: none;
 }
 
@@ -90,12 +91,14 @@ footer > span {
 .navbar-nav .nav-link.active {
     background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
 .navbar-nav .nav-link:hover {
     background: linear-gradient(90deg, #ffad33 -34.83%, #f36 125.49%);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
