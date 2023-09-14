@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="SylJ">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>SylJ NHAWebdesign | Les 22 - Bootstrap site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="h-100">
+        <div class="container-sd">
+            <header>
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container">
+                        <a class="navbar-brand" href="./">
+                            <img src="media/images/logo_transparant.svg" alt="logo SylJ" class="d-inline-block align-text-top pe-4">
+                            <span class="navbar-brand-title">SylJ | nha</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Schakel navigatie aan/uit">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">HOME</a></li>
+                                <li class="nav-item"><a class="nav-link" href="overmij.html">OVER MIJ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main id="homepage">
+                <section class="leader container-fluid d-flex justify-content-center py-5">
+                    <article class="welcome-message">
+                        <h1>Kom lekker binnen in<br>mijn Digitale WorkSpace!</h1>
+                        <p class="lead">Neem een kijkje in een aantal werken van de collectie en kom ook achter mij als persoon zelf.<br>
+                        Van werkervaring tot hobby's en meer, er is genoeg om te zien en te ontdekken.
+                        </p>
+                        <a href="overmij.html" role="button" class="btn btn-primary float-md-end"><strong>Ontdek meer</strong></a>
+                    </article>
+                </section>
+                <section class="gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/logo_yvonjonckbloedt.webp" class="card-img-top" alt="Logo Yvon Jonckbloedt">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo Yvon Jonckbloedt</h5>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/logo_concept_merchandisefabriek.webp" class="card-img-top" alt="Logo concept De Merchandise Fabriek">
+                            <div class="card-body">
+                                <h5 class="card-title">Concept Logo De Merchandise Fabriek</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/logo_mixedart.webp" class="card-img-top" alt="Logo MixedArt">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo MixedArt</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/logo_concept_mymindlab.webp" class="card-img-top" alt="Logo concept MyMindLab">
+                            <div class="card-body">
+                                <h5 class="card-title">Concept Logo MyMindLab</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/logo_kluschicks.webp" class="card-img-top" alt="Logo Kluschicks">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo KlusChicks</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/abstract_moon_landscape.webp" class="card-img-top" alt="Abstract Moon Landscape illustration">
+                            <div class="card-body">
+                                <h5 class="card-title">Abstract Moon Landscape</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/abstract_space_planets.webp" class="card-img-top" alt="Abstract Planets in Space illustration">
+                            <div class="card-body">
+                                <h5 class="card-title">Abstract Planet in Space</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/planet_landscape.webp" class="card-img-top" alt="Abstract Planet Landscape illustration">
+                            <div class="card-body">
+                                <h5 class="card-title">Abstract Planet Landscape</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="media/images/space_robot.webp" class="card-img-top" alt="Abstract Space Robot illustration">
+                            <div class="card-body">
+                                <h5 class="card-title">Abstract Space Robot</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer><span>© sylj nhawebdesign | all rights reserved</span></footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

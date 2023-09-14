@@ -1,0 +1,22 @@
+    Open in de editor drie nieuwe HTML-bestanden. Deze bestanden moeten voldoen aan de volgende voorwaarden:
+
+        ✔ Het eerste bestand noemt u ‘index.html’. De <body> van deze pagina bevat een container die niet 100% breed is totdat de schermbreedte van 576 pixels is bereikt. 
+          Daarnaast staat er op deze pagina een welkomstbericht met daaronder negen afbeeldingen (bijvoorbeeld foto’s van uzelf of uw hobby’s/woonplaats). 
+          De afbeeldingen staan in een grid en er staan niet meer dan drie afbeeldingen in één rij.
+
+        ✔ Het tweede bestand noemt u ‘overmij.html’. Ook bij deze pagina bevat de <body> een container die niet 100% breed is totdat de schermbreedte van 576 pixels is bereikt. 
+          In deze container staat een tekst die gaat over uzelf, uw werkervaring en uw hobby’s.
+
+        ✔ Het derde bestand noemt u ‘contact.html’. Ook hier bevat de <body> een container die niet 100% breed is totdat de schermbreedte van 576 pixels is bereikt. 
+          Deze pagina bevat een contactformulier met de velden Naam, E-mail en Bericht. Onder het formulier staat een verzendknop (die al dan niet daadwerkelijk werkt).
+
+        ✔ De bestanden hebben een Bootstrap-basis. Deze is aan uw bestanden toegevoegd met de CDN-methode.
+
+        ✔ Ten minste één voorgedefinieerde Bootstrap-stijl wordt overschreven door uw eigen CSS-code.
+
+        ✔ De header van uw website bevat een responsief menu, met een titel en drie links naar de drie verschillende pagina’s (Home – Over mij - Contact). De kleuren van het menu en de positionering van de links mag u zelf bepalen.
+        
+    ✔ De footer van uw website is minimaal 200 pixels hoog en bevat copyright-informatie.
+    
+    ✔ Zet uw pagina online met behulp van GitHub of op uw server.
+    ✔ Stuur GitHub-link of uw domeinnaam via Plaza naar uw docent.

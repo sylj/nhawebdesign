@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body, html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #ececec;
+}
+
+main {
+    min-height: calc(100vh - 426px);
+}
+
+h1, h2, h3 {
+    font-family: 'Exo 2', 'Noto Sans', sans-serif;
+}
+
+p, a, span {
+    font-family: 'Bellota Text', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > span {
+    margin: auto;
+}
+
+.navbar.navbar-expand-sm {
+    padding: 3rem 0;
+}
+
+.navbar-collapse {
+    margin: 40px auto;
+}
+
+.navbar .container {
+    justify-content: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 120px;
+}
+
+.navbar-brand-title {
+    font-family: 'Grand Hotel', sans-serif;
+    font-size: 2.5rem;
+    color: transparent;
+    background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
+    background-clip: text;
+    display: none;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    font-family: 'Bungee Shade', sans-serif;
+    --bs-nav-link-font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link.active {
+    background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(90deg, #ffad33 -34.83%, #f36 125.49%);
+    background-clip: text;
+    color: transparent;
+}
+
+#homepage > .leader.py-5 {
+    padding: 5em 20px !important;
+}
+
+#aboutpage .content .container .row {
+    padding: 1em 0;
+    margin-bottom: 20px;
+}
+
+.content article {
+    padding: 4em 20px;
+}
+
+.welcome-message {
+    padding: 20px 0;
+}
+
+.gallery .col {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    border: 0;
+    --bs-card-border-radius: 20pt;
+    --bs-card-inner-border-radius: 10pt;
+    box-shadow: 0 12px 25px -25px #000;
+}
+
+.card-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#homepage .row {
+    margin: 0 20%;
+}
+
+#aboutpage .content article {
+    order: 2;
+    padding: 4em 20px;
+    padding-top: 15px;
+}
+
+#aboutpage .content article h1 {
+    text-align: center;
+}
+
+#aboutpage .content img {
+    width: auto;
+    height: 200px;
+    margin: auto 0;
+}
+
+.btn {
+    --bs-btn-padding-y: .6rem;
+    --bs-btn-padding-x: 1.8rem;
+    border: 0;
+    border-radius: 20pt;
+}
+
+.btn-primary, .btn-secondary:hover, .btn.form-btn:active {
+    background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
+    color: #fff;
+}
+
+.btn-secondary, .btn-primary:hover, .form-btn:hover {
+    background: linear-gradient(90deg, #ffad33 -34.83%, #f36 125.49%);
+}
+
+form {
+    min-width: 30%;
+    border: 4pt solid #000;
+    border-radius: 20pt;
+    box-shadow: 0 12px 25px -25px #000;
+    overflow: clip;
+    transition: 0.2s ease;
+}
+
+form:focus-within {
+    box-shadow: 4px 10px 0 rgba(0,0,0,0.5);
+}
+
+form .col {
+    padding: 2em 3em;
+}
+
+.form-label {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-control::placeholder {
+    opacity: 0.5;
+}
+
+input[type="text"], input[type="email"], textarea#messageInput {
+    border: 3pt solid #000;
+}
+
+.message-container {
+    background: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
+    padding-top: 1em;
+    padding-bottom: 2em;
+    border-top: 4pt solid #000;
+}
+
+.message-container .form-label {
+    color: #fff;
+    font-family: 'Grand Hotel', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.message-container .form-btn {
+    color: #fff;
+    font-family: 'Grand Hotel', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: auto;
+    border: 3pt solid #000;
+    border-radius: 25pt;
+}
+
+@media only screen and (min-width: 576px) {
+    /** SCREEN SIZE > 576px (Mobile) */
+    
+    .navbar.navbar-expand-sm {
+        padding: 1rem 0;
+    }
+
+    .navbar .container {
+        justify-content: space-between;
+    }
+
+    .navbar-expand-sm .navbar-collapse {
+        flex: unset;
+    }
+    
+    .navbar-brand img {
+        height: initial;
+    }
+
+    .nav-link {
+        --bs-nav-link-font-size: 1.1rem;
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+    }
+
+    main {
+        min-height: calc(100vh - 362px);
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+    
+    .navbar-brand-title {
+        display: inline-block;
+    }
+
+    #homepage > .leader.py-5 {
+        padding: 10em 20px !important;
+    }
+
+    #aboutpage .content .container .row {
+        padding: 3rem 0;
+        margin-bottom: 40px;
+    }
+
+    #aboutpage .content article {
+        width: 45%;
+        padding-top: 20px;
+    }
+    
+    #aboutpage .content article:not(.article-work) {
+        order: unset;
+    }
+
+    #aboutpage .content article h1 {
+        text-align: left;
+    }
+    
+    #aboutpage .content img {
+        height: 260px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        --bs-nav-link-font-size: 1.4rem;
+        --bs-navbar-nav-link-padding-x: 2rem;
+    }
+}
