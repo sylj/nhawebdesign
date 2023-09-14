@@ -229,8 +229,8 @@ input[type="text"], input[type="email"], textarea#messageInput {
     border-radius: 25pt;
 }
 
+/** SCREEN SIZE > 576px (Mobile) */
 @media only screen and (min-width: 576px) {
-    /** SCREEN SIZE > 576px (Mobile) */
     
     .navbar.navbar-expand-sm {
         padding: 1rem 0;
@@ -255,7 +255,7 @@ input[type="text"], input[type="email"], textarea#messageInput {
 
     main {
         min-height: calc(100vh - 362px);
-    }    
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -269,6 +269,10 @@ input[type="text"], input[type="email"], textarea#messageInput {
 
     #homepage > .leader.py-5 {
         padding: 10em 20px !important;
+    }
+    
+    #homepage .row {
+        margin: 0 auto;
     }
 
     #aboutpage .content .container .row {
