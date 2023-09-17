@@ -1,0 +1,4 @@
+    Open in de editor een nieuw bestand met een willekeurige naam.
+    ✔ Schrijf een goed gestructureerde HTML-pagina die een jQuery-toepassing naar keuze bevat.
+    ✔ Zet uw pagina online met behulp van GitHub of op uw server.
+    ✔ Stuur GitHub-link of uw domeinnaam via Plaza naar uw docent.
