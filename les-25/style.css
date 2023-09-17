@@ -1,8 +1,6 @@
 :root {
     --light-primary-bg-color: #ececec;
     --light-secondary-bg-color: #fff;
-    --dark-primary-bg-color: #0a0d11;
-    --dark-secondary-bg-color: #060f1a;
     --primary-color: linear-gradient(220deg, #4af9e4 1.51%, #00f 99.57%);
     --secondary-color: linear-gradient(90deg, #ffad33 -34.83%, #f36 125.49%);
     --text-color-white: #fff;
@@ -27,7 +25,7 @@ body {
 }
 
 header {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--light-secondary-bg-color);
     width: 100%;
     height: 100px;
     display: flex;
@@ -80,6 +78,10 @@ section {
     padding-bottom: 5px;
 }
 
+.card h1, .card h2, .card p, .card span {
+    color: var(--text-color-white);
+}
+
 .card {
     background-image: var(--primary-color);
     width: 300px;
@@ -94,11 +96,6 @@ section {
 
 .card:hover {
     width: 320px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
-}
-
-.card h1, .card h2, .card p, .card span {
-    color: var(--text-color-white);
 }
 
 .card-container, .card-overlay {
@@ -169,6 +166,9 @@ section {
     right: 0;
     display: flex;
     cursor: pointer;
+}
+#close:hover path {
+    fill: var(--text-color-black);
 }
 
 #close:hover::before {
